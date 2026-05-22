@@ -7,7 +7,7 @@
     "start": "node radar.js"
   },
   "dependencies": {
-    "node-fetch": "^2.6.7"
+    "node-fetch": "2.6.7"
   },
   "engines": {
     "node": "20.x"
