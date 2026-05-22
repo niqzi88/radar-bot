@@ -1,3 +1,10 @@
+const http = require('http'); // Render'ın "çalışıyor" görmesi için web sunucusu
+const port = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(fs.readFileSync('widget_data.json', 'utf8')); // Widget verisini buradan sunacağız
+}).listen(port);
 // =================================================================
 // 🛡️ PRO-TRADE SYNERGY // GÜRÜLTÜ FİLTRELİ & WIDGET READY V5.3
 // =================================================================
@@ -63,3 +70,10 @@ async function startTerminal() {
 }
 
 startTerminal();
+const http = require('http'); // Render'ın "çalışıyor" görmesi için web sunucusu
+const port = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(fs.readFileSync('widget_data.json', 'utf8')); // Widget verisini buradan sunacağız
+}).listen(port);
